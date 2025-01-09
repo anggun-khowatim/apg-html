@@ -3,19 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APG | login</title>
+    <title>APG | Data Pegawai</title>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        Aplikasi Manejemen Pegawai
+    </header>
     <div class="container">
-        <section class="Login-box">
-            <h2>Login Aplikasi</h2>
-            <form action="cekLogin.php" method="post">
-                <input type="text" name="username" id="username" placeholder="Username">
-                <input type="password" name="password" placeholder="Password">
-                <input type="submit" value="Login">
-            </form>
+        <aside>
+            <ul class="menu">
+                <Li><a href="dasboard.html">Dashboard</a></Li>
+                <Li><a href="tabel.html">Data Pegawai</a></Li>
+                <Li><a href="tabel.html">Data Jabatan</a></Li>
+                <Li><a href="login.html">Keluar</a></Li>
+            </ul>
+        </aside>
+        <section class="main">
+            <h2 class="judul">Data Pegawai</h2>
+            <a href="form.html"class="tombol">Tambah</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Foto</th>
+                        <th>Nama</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Jabatan</th>
+                        <th>Keterangan</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="images/user1.png" width="100"></td>
+                        <td>Anggun Khowatim</td>
+                        <td><P></P></td>
+                        <td>02 Juni 2007</td>
+                        <td>Direktur</td>
+                        <td>-</td>
+                        <td>
+                            <a class="tombol edit" href="#">Edit</a>
+                            <a class="tombol hapus" href="#">Hapus</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="images/user2.png" width="100"></td>
+                        <td>Muhammad Indra</td>
+                        <td>L</td>
+                        <td>10 Agustus 2007</td>
+                        <td>Pengusaha</td>
+                        <td>-</td>
+                        <td>
+                            <a class="tombol edit" href="#"> Edit</a>
+                            <a class="tombol hapus" href="#"> Hapus </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </div>
+    <footer>
+        Copyright &copy; <b>anggun</b> Official
+    </footer>
 </body>
 </html>
